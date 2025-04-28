@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+		<link rel="stylesheet" href="styles/style.css"/>
+		<title>PixelLoot</title>
+</head>
+<body>
+		
+		<div id="player-info">
+				<div class="player-main">
+						<div class="player-name">Tester</div>
+						<div id="player-life" class="health-bar bar">
+								<div class="value"></div>
+						</div>
+				</div>
+				<div class="currency coins">
+						<img class="currency-img" src="Images/coin_img.png">
+						<div class="currency-amount">0</div>
+				</div>
+		</div>
+		
+		<div id="tabs-selector">
+				<div id="mobs-selector" class="tab">
+						Mobs
+						<div class="selector"></div>
+				</div>
+				<div id="stats-selector" class="tab">
+						Stats
+						<div class="selector"></div>
+				</div>
+		</div>
+		
+		<div id="mobs" class="tab-container">
+				<div id="bat-card" class="card">
+						<img class="mob-img" src="images/bat_img.png" alt="bat_img">
+						<div class="mob-info">
+								<div class="mob-main">
+										<p class="mob-name">Bat</p>
+										<div id="bat-life" class="health-bar bar">
+												<div class="value"></div>
+										</div>
+								</div>
+								<p class="mob-stats"></p>
+						</div>
+						<div class="card-decor">></div>
+				</div>
+				
+				<div id="wolf-card" class="card">
+						<img class="mob-img" src="images/wolf_img.png" alt="wolf_img">
+						<div class="mob-info">
+								<div class="mob-main">
+										<p class="mob-name">Wolf</p>
+										<div id="wolf-life" class="health-bar bar">
+												<div class="value"></div>
+										</div>
+								</div>
+								<p class="mob-stats"></p>
+						</div>
+						<div class="card-decor">></div>
+				</div>
+		</div>
+		
+		<div id="stats" class="tab-container">
+				<table id="stats-table">
+						<tr>
+								<td>Attack:</td><td id="player-atk" class="skill-value"></td>
+						</tr>
+						<tr>
+								<td>Defence:</td><td id="player-def" class="skill-value"></td>
+						</tr>
+				</table>
+		</div>
+		
+		<footer>
+				<p>© 2025 <a href="https://github.com/Inde13">Inde</a></p>
+		</footer>
+		
+</body>
+<script src="scripts/utils.js"></script>
+<script src="scripts/tabs.js"></script>
+<script src="scripts/player.js"></script>
+<script src="scripts/mobs.js"></script>
+<script src="scripts/cards.js"></script>
+</html>
