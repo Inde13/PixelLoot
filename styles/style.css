@@ -1,0 +1,214 @@
+:root {
+		--bg-col: rgb(53, 50, 70);
+		
+		/* Cards */
+		--card-col-1: rgb(70, 65, 95);
+		--card-col-2: rgb(65, 60,87);
+		
+		--img-bg-col: rgb(57, 53, 76);
+		
+		--card-gradient: linear-gradient(90deg, var(--card-col-1), var(--card-col-2));
+		--img-gradient: linear-gradient(90deg, var(--card-col-1), var(--img-bg-col));
+		
+		/* Bars */
+		
+		--healthbar-bg-col: rgb(50, 30, 35);
+		--healthbar-value-col: rgb(150, 70, 75);
+		--healthbar-border-col: rgb(150, 120, 60);
+}
+
+* {
+		margin: 0px;
+		padding: 0px;
+}
+
+html {
+		height: 100%;
+}
+
+body {
+		background-color: var(--bg-col);
+}
+
+#player-info {
+		display: flex;
+		align-items: center;
+		background-image: var(--card-gradient);
+		margin: 10px;
+		padding: 5px;
+		max-height: 35px;
+		color: aliceblue;
+		font-family: "Courier New";
+		border-radius: 10px;
+		box-shadow: 0px 1px 4px rgba(0, 0, 0, .3);
+}
+
+.player-main {
+		width: fit-content;
+		margin: 0px 10px;
+}
+
+.player-name {
+		width: fit-content;
+		margin: auto;
+}
+
+#player-stats {
+		width: fit-content;
+		font-size: 70%;
+		margin: auto;
+}
+
+#player-life {
+		margin: auto;
+}
+
+.currency {
+		max-height: inherit;
+		display: flex;
+		align-items: center;
+		padding-left: 10px;
+		margin-left: auto;
+		margin-right: 50px;
+		border-left: 2px solid var(--bg-col);
+}
+
+.currency-img {
+		max-height: inherit;
+}
+
+.currency-amount {
+		align-items: center;
+		border-radius: 10px;
+		font-family: FreeMono;
+		font-weight: bold;
+		margin-left: 3px; 
+}
+
+#tabs-selector {
+		display: flex;
+		background-image: var(--card-gradient);
+		margin: 10px;
+		color: aliceblue;
+		font-family: "Courier New";
+		border-radius: 10px;
+		box-shadow: 0px 1px 4px rgba(0, 0, 0, .3);
+}
+
+.tab {
+		width: 50%;
+		padding: 5px 0px;
+		text-align: center;
+}
+
+.selected {
+		background-color: var(--img-bg-col);
+		border-radius: 10px
+}
+
+.tab-container {
+		display: none;
+}
+
+.card {
+		display: flex;
+		align-items: center;
+		background-image: var(--card-gradient);
+		margin: 10px;
+		border-radius: 10px;
+		box-shadow: 0px 1px 4px rgba(0, 0, 0, .3);
+		font-family: "Courier New";
+		color: aliceblue;
+}
+
+.card .mob-img {
+		align-self: center;
+		max-height: 60px;
+		border-radius: 10px 5px 5px 10px;
+		margin-right: 10px;
+		padding: 0px 10px 0px 10px;
+		background-image: var(--img-gradient);
+}
+
+.card .mob-main {
+		display: flex;
+		align-items: center;
+}
+
+.bar {
+  border-radius: 7px; 
+  width: 100px;
+  height: 10px;
+  margin-left: 5%;
+		border: 1px solid var(--healthbar-border-col);
+}
+
+.health-bar {
+  background-color: var(--healthbar-bg-col);
+  border-radius: 7px;
+}
+
+.health-bar .value {
+  background-color: var(--healthbar-value-col);
+		border-radius: 7px;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 70%;
+}
+
+.card .mob-stats {
+		margin: auto;
+}
+
+.card .card-decor {
+		margin-left: auto;
+		margin-right: 10px;
+}
+
+#stats {
+		align-items: center;
+		background-image: var(--card-gradient);
+		margin: 10px;
+		border-radius: 10px;
+		box-shadow: 0px 1px 4px rgba(0, 0, 0, .3);
+		font-family: "Courier New";
+		color: aliceblue;
+		height: max-content;
+}
+
+#stats-table {
+		width: fit-content;
+		height: fit-content;
+		margin: 0px 10px;
+}
+
+td {
+		padding: 5px 10px;
+}
+
+.skill-value {
+		text-align: center;
+		background-color: rgb(82, 77, 105);
+		border-radius: 15px;
+		width: 50px;
+}
+
+footer {
+		position: fixed;
+		width: 100%;
+		bottom: 0%;
+		background-image: var(--card-gradient);
+		font-family: "Courier New";
+		color: aliceblue;
+		padding: 5px;
+		text-align: center;
+}
+
+footer a {
+		text-decoration: none;
+		color: aqua;
+		border-bottom: 1px solid aqua;
+}
