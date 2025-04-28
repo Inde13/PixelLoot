@@ -1,4 +1,4 @@
-function cardClicked(evt) {
+  function cardClicked(evt) {
 				let cardEl = evt.currentTarget;
 				let mobName = cardEl.querySelector(".mob-name").textContent;
 				mobs[mobName.toLowerCase()].takeAttack();
